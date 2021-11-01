@@ -9,14 +9,14 @@ public class TV {
 	private boolean estado;
 	private int volumen=1;
 	private Control control;
-	private static int numeroTV;
+	private static int numTv;
 	
 	//CONTRUCTOR
 	
 	public TV(Marca marca, boolean estado) {
 		this.marca= marca;
 		this.estado = estado;	
-		TV.numeroTV++;
+		TV.numTv++;
 	}
 	
 	//METODOS GET(RETORNO)
@@ -33,7 +33,6 @@ public class TV {
 		return precio;
 	}
 	
-}
 	public int getVolumen() {
 		return volumen;
 	}
@@ -42,8 +41,8 @@ public class TV {
 		return canal;
 	}
 	
-	public static int getNumeroTV() {
-		return numeroTv;
+	public static int getNumTV() {
+		return numTv;
 	}
 	
 	public boolean getEstado() {
@@ -81,11 +80,11 @@ public class TV {
 			return;
 	}
 	
-	public static void setNumeroTV(int numeroTV) {
-		TV.numeroTV = numeroTV;
+	public static void setNumTV(int numeroTV) {
+		TV.numTv = numeroTV;
 	}
 	
-	
+
 	//METODOS ADICIONALES 
 	
 	
@@ -112,3 +111,5 @@ public class TV {
 	public void volumenDown() {
 		setVolumen(getVolumen()-1);
 	}
+	
+}
